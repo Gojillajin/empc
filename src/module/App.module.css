@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+
+.header {
+  background-color: #282c34;
+  min-height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo_col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoRow1 {
+  color: white;
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+.logoRow2 {
+  color: white;
+}
+
+.userLigin {
+  display: flex;
+  flex-direction: row;
+}
+
+.signIn, .signUp {
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(66, 64, 64);
+  border-radius: 10%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.mainSidebar {
+  background-color: #282c34;
+  width: 20%;
+  height: 100vh;
+  margin : 0 10px 10px 10px;
+  border-radius: 6% / 3% ;
+  color: white;
+  padding: 20px;
+}
+
+.mainData {
+  background-color: blue;
+}
+
+.bottom {
+  background-color: green;
+}
