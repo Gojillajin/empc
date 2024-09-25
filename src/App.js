@@ -1,4 +1,8 @@
 import style from '../src/module/App.module.css';
+import { Image } from 'react-bootstrap';
+import summary from './img/summary_26.png'
+import list from './img/list_32.png';
+import project from './img/project_32.png';
 
 function App() {
   return (
@@ -15,13 +19,19 @@ function App() {
         </div>
         <div className={ style.userLigin } >
           <div className={ style.signIn } > Sign In </div>
-          <div className={ style.signUp } > Sign UP </div>
+          <div className={ style.signUp } > Sign Up </div>
         </div>
       </div>
       <div className={ style.main }>
         <div className={ style.mainSidebar } >
-          <div>main</div>
-          <div>customer LIst</div>
+          <div className={ style.sidebarBtn } >
+            <Image  className={ style.img } src={ summary } width={ 32 }></Image>
+            <span>Summary</span>
+            </div>
+          <div className={ style.sidebarBtn } >
+            <Image className={ style.img } src={ list }></Image>
+            <span>customer LIst</span>
+            </div>
           <div>Project LIst</div>
           <div>Project History</div>
         </div>

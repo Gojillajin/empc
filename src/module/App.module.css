@@ -71,3 +71,14 @@
 .bottom {
   background-color: green;
 }
+
+.sidebarBtn {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+
+.img {
+  margin-right: 10px;
+}
