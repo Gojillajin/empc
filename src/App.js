@@ -1,43 +1,51 @@
 import style from '../src/module/App.module.css';
-import { Image } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import summary from './img/summary_26.png'
 import list from './img/list_32.png';
 import project from './img/project_32.png';
+import user from './img/user_50.png';
 
 function App() {
   return (
     <div className="App">
-      <div className={ style.header } >
-        <div className='logo' >
-          <div className={ style.logo_col }>
-            <div className={ style.logoRow1 } >EMPC</div>
-            <div className={ style.logoRow2 }  >
-              <div>Enterprise Project</div>
-              <div>Management Companion</div>
+      <Container fluid>
+        <Row>
+          <Col lg={2} >
+            <div className={ style.sidebar } >
+              <div className={ style.logoContainer } >
+                <div className={ style.logo } >
+                  EMPC
+                </div>
+                <div className={ style.productName } >
+                  <p style={{ margin:0}} >Enterprise Project</p>
+                  <p style={{ margin:0}} >Management Companion</p>
+                </div>
+              </div>
+              <div className={ style.btnContainer } >
+                <div className={ style.btn } >
+                    <Image src={ summary } style={{ margin : '0 16px 0 40px' }} width={24}></Image><span>Dashboard</span>
+                  </div>
+                  <div className={ style.btn } >
+                    <Image src={ list } style={{ margin : '0 16px 0 40px' }} width={24} ></Image><span>Project Lists</span>
+                  </div>
+                  <div className={ style.btn } >
+                    <Image src={ project } style={{ margin : '0 16px 0 40px' }} width={24} ></Image><span>Project Histories</span>
+                  </div>
+                  <div className={ style.btn } >
+                    <Image src={ user } style={{ margin : '0 16px 0 40px' }} width={24} ></Image><span>Customers</span>
+                  </div>
+              </div>
+              <div className={ style.userInfo } >
+                <div className='sign button' >
+                  <Button style={{ backgroundColor : '#ff6f61', border : '#ff6f61' }} >Sign In</Button>
+                  <Button style={{ backgroundColor : '#ff6f61', border : '#ff6f61' }} >Sign Up</Button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className={ style.userLigin } >
-          <div className={ style.signIn } > Sign In </div>
-          <div className={ style.signUp } > Sign Up </div>
-        </div>
-      </div>
-      <div className={ style.main }>
-        <div className={ style.mainSidebar } >
-          <div className={ style.sidebarBtn } >
-            <Image  className={ style.img } src={ summary } width={ 32 }></Image>
-            <span>Summary</span>
-            </div>
-          <div className={ style.sidebarBtn } >
-            <Image className={ style.img } src={ list }></Image>
-            <span>customer LIst</span>
-            </div>
-          <div>Project LIst</div>
-          <div>Project History</div>
-        </div>
-        <div className={ style.mainData} >data</div>
-      </div>
-      <div className={style.bottom}>bottom</div>
+          </Col>
+          <Col lg={10} > <div className={ style.main } >main </div></Col>
+        </Row>
+      </Container>
     </div>
   );
 }
