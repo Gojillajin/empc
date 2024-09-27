@@ -1,0 +1,25 @@
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userDashboard {
+    margin: 10px 0 10px 0;
+}
+
+.customerTitle {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 1% / 14%;
+    
+}
+
+.customerTotal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 3% / 5%;
+}

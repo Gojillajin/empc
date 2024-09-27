@@ -13,11 +13,11 @@
 }
 
 .main {
-  background-color: blue;
+  background-color: white;
 }
 
 .logoContainer {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,26 +25,30 @@
 }
 
 .logo {
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.629);
   font-size: 30px;
   margin-right: 15px;
 }
 
 .productName {
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.629);
 }
 
 .btnContainer {
-  flex: 10;
+  flex: 8;
+  margin-top: 20px;
 }
 
 .btn {
   padding : 10px 0 10px 0;
   display: flex;
   justify-items: center;
-  color: rgba(255, 255, 255, 0.829);
+  color: rgba(255, 255, 255, 0.629);
 }
 
-.userInfo {
-  flex: 1;
+.loginOut {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
